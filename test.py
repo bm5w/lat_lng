@@ -46,7 +46,7 @@ def test_lng_lt_180():
 
 
 def test_lng_eq_180():
-    assert ll.lat_lng(0, 180.0) == (0, 180.0)
+    assert ll.lat_lng(0, 180.0) == (0, -180.0)
 
 
 def test_lng_gt_neg_180():

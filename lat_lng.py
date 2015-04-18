@@ -1,4 +1,4 @@
-from math import atan, tan
+from math import atan, tan, radians
 
 
 def lat_lng(lat, lng):
@@ -17,6 +17,6 @@ def lat_lng(lat, lng):
     # if lat > 90.0:
     #     amt_gt_90 = lat - (lat//90)*90
     #     lat = 90 - amt_gt_90
-    lng = -2*atan(1/tan((lng-180)/360))
+    lng = -2*atan(1/tan((radians(lng)-180)/2))
 
     return lat, lng
